@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shopping/Blocs/cart.bloc.dart';
 import 'package:shopping/Blocs/home.bloc.dart';
 import 'package:shopping/ui/android/pages/tabs.page.dart';
-import 'Blocs/cart.bloc.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shopping/Blocs/cart.bloc.dart';
-import 'package:shopping/Blocs/home.bloc.dart';
 import 'package:shopping/ui/android/pages/tabs.page.dart';
+
+import 'Blocs/cart.bloc.dart';
+import 'Blocs/home.bloc.dart';
+import 'Blocs/user.bloc.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +21,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => CartBloc(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => UserBloc(),
         ),
       ],
       child: MaterialApp(
